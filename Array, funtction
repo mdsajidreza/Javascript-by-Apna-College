@@ -1,0 +1,64 @@
+// const student = {
+//     name : "sajid",
+//     age: 20,
+//     eng: 96,
+//     math: 94,
+//     phy: 98,
+//     getAvg() {
+//         let avg = (this.eng + this.math, this.phy) /3;
+//         console.log(`${this.name} got avg marks = ${avg}`);
+//     }
+// }
+// function getAvg() {
+//     console.log(this);
+// }
+
+
+//try & catch in js
+
+try {
+    console.log(a);
+} catch {
+    console.log("sajid raza");
+}
+console.log("sajid raza");
+
+
+// arrow function in js
+const sum = (a,b) => {
+    console.log("a+b");
+}
+const cube =(n) => {
+    return n*n*n;
+}
+const pow =(a,b) => {
+    return a**b;
+}
+// implicit return in js
+const mul = (a ,b) => a * b;
+
+// set timeout function in js
+
+console.log("hi there");
+setTimeout(()=> {
+    console.log("sajid raza");
+}, 4000);
+console.log("welcome");
+
+
+timeInterval in js
+
+ 
+
+
+
+const student = {
+    name: "sajid",
+    marks: 95,
+    prop: this,//global scope
+    getName: function () {
+        console.log(this);
+        return this.name;
+
+    },
+};
