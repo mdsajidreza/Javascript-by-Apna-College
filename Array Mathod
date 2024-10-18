@@ -1,0 +1,52 @@
+// array mathod
+// forEach mathod
+let array = [1,2,3,4,5];
+
+let print = function (el) {
+    console.log(el);
+};
+array.forEach(print);
+
+
+// array object
+let arr = [
+    {
+        name: "md",
+        marks: 94,
+    },
+    {
+        name: "sajid",
+        marks: 96,
+    },
+    {
+        name:"reza",
+        marks: 92,
+    },
+];
+arr.forEach((student) => {
+    console.log(student.marks);
+});
+
+// map mathod
+let num = [1,2,3,4];
+
+let double = num.map(function(el) {
+    return el*2;
+} );
+
+//filter mathod
+let nums =[2,4,1,5,6,7,8,9];
+let even = nums.filter((el) => {
+    return el %2 == 0; //even
+    //return el % 2 !=0;  // odd
+});
+
+
+//  reduse mathod
+let number = [1,2,3,4];
+let finalval = number.reduce((res, el) => {
+    console.log(res);
+    return res+ el;
+});
+    
+console.log(finalval);
